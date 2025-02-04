@@ -60,12 +60,12 @@ final class ResultCellHeaderView: UIView {
   }
 
   private func setLayout() {
-    appIconImageView.setDimensions(height: 60, width: 60)
+    appIconImageView.setDimensions(width: 60, height: 60)
     appIconImageView.setTop(anchor: self.topAnchor, constant: 0)
     appIconImageView.setBottom(anchor: self.bottomAnchor, constant: 0)
     appIconImageView.setLeading(anchor: self.leadingAnchor, constant: 20)
 
-    installButton.setDimensions(height: 30, width: 60)
+    installButton.setDimensions(width: 60, height: 30)
     installButton.setTrailing(anchor: self.trailingAnchor, constant: 20)
     installButton.setCenterY(view: self, constant: .zero)
 

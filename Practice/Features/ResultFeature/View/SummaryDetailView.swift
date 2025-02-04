@@ -119,7 +119,7 @@ final class SummaryDetailView: UIView {
 
     // 이미지뷰 크기 설정
     [userImageView, categoryImageView].forEach { imageView in
-      imageView.setDimensions(height: 16, width: 16)
+      imageView.setDimensions(width: 16, height: 16)
     }
   }
 

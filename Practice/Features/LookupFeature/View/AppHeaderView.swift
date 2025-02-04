@@ -75,7 +75,7 @@ final class AppHeaderView: UIView {
   }
 
   private func setLayout() {
-    appIconImageView.setDimensions(height: 100, width: 100)
+    appIconImageView.setDimensions(width: 100, height: 100)
     appIconImageView.setTop(anchor: self.topAnchor, constant: .zero)
     appIconImageView.setLeading(anchor: self.leadingAnchor, constant: Layout.offset)
     appIconImageView.setBottom(anchor: self.bottomAnchor, constant: .zero)
@@ -89,11 +89,11 @@ final class AppHeaderView: UIView {
     subTitleLabel.setContentCompressionResistancePriority(.defaultHigh, for: .vertical)
     subTitleLabel.setBottom(lessThanOrEqualTo: installButton.topAnchor, constant: 5)
 
-    installButton.setDimensions(height: 30, width: 60)
+    installButton.setDimensions(width: 60, height: 30)
     installButton.setLeading(anchor: titleLabel.leadingAnchor, constant: .zero)
     installButton.setBottom(anchor: appIconImageView.bottomAnchor, constant: .zero)
 
-    shareBUtton.setDimensions(height: 30, width: 30)
+    shareBUtton.setDimensions(width: 30, height: 30)
     shareBUtton.setTrailing(anchor: titleLabel.trailingAnchor, constant: .zero)
     shareBUtton.setBottom(anchor: appIconImageView.bottomAnchor, constant: .zero)
   }
