@@ -84,14 +84,15 @@ extension ImageDownloader {
         throw error
       }
     }
+
     setTask(task, for: url)
 
     do {
       let image = try await task.value
-    //  removeTask(for: url)
+      removeTask(for: url)
       return image
     } catch {
-    //  removeTask(for: url)
+      removeTask(for: url)
       return nil
     }
   }
